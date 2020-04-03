@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_sky_flower">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_trigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회차"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Spinner
+        android:id="@+id/spinner_past_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/text_view_round"/>
+
+    <TextView
+        android:id="@+id/text_view_past_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_layout_past_round_number"
+        android:text="지난회차 당첨번호"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_past_round_number"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/spinner_past_round">
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_1"
+            android:layout_alignStart="@id/image_view_past_round_number_1"
+            android:layout_alignEnd="@id/image_view_past_round_number_1"
+            android:layout_alignTop="@id/image_view_past_round_number_1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_1"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_2"
+            android:layout_alignStart="@id/image_view_past_round_number_2"
+            android:layout_alignEnd="@id/image_view_past_round_number_2"
+            android:layout_alignTop="@id/image_view_past_round_number_2"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_2"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_3"
+            android:layout_alignStart="@id/image_view_past_round_number_3"
+            android:layout_alignEnd="@id/image_view_past_round_number_3"
+            android:layout_alignTop="@id/image_view_past_round_number_3"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_3"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_4"
+            android:layout_alignStart="@id/image_view_past_round_number_4"
+            android:layout_alignEnd="@id/image_view_past_round_number_4"
+            android:layout_alignTop="@id/image_view_past_round_number_4"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_4"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_5"
+            android:layout_alignStart="@id/image_view_past_round_number_5"
+            android:layout_alignEnd="@id/image_view_past_round_number_5"
+            android:layout_alignTop="@id/image_view_past_round_number_5"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_6"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_5"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_6"
+            android:layout_alignStart="@id/image_view_past_round_number_6"
+            android:layout_alignEnd="@id/image_view_past_round_number_6"
+            android:layout_alignTop="@id/image_view_past_round_number_6"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/plus_sign"
+            android:id="@+id/image_view_plus_sign"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_past_round_number_6"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_past_round_number_bonus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_plus_sign"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_past_round_number_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_past_round_number_bonus"
+            android:layout_alignStart="@id/image_view_past_round_number_bonus"
+            android:layout_alignEnd="@id/image_view_past_round_number_bonus"
+            android:layout_alignTop="@id/image_view_past_round_number_bonus"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_look_up_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_past_round_number"
+        android:layout_alignParentEnd="true"
+        android:text="당첨판매점 조회"
+        android:visibility="gone"/>
+
+
+
+
+    <Button
+        android:id="@+id/button_number_generation"
+
+        android:text="번호 생성"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_look_up_store"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_number_generated"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/button_number_generation">
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_view_generated_number_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_1"
+            android:layout_alignStart="@id/image_view_generated_number_1"
+            android:layout_alignEnd="@id/image_view_generated_number_1"
+            android:layout_alignTop="@id/image_view_generated_number_1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_generated_number_1"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_generated_number_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_2"
+            android:layout_alignStart="@id/image_view_generated_number_2"
+            android:layout_alignEnd="@id/image_view_generated_number_2"
+            android:layout_alignTop="@id/image_view_generated_number_2"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_generated_number_2"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_generated_number_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_3"
+            android:layout_alignStart="@id/image_view_generated_number_3"
+            android:layout_alignEnd="@id/image_view_generated_number_3"
+            android:layout_alignTop="@id/image_view_generated_number_3"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_generated_number_3"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_view_generated_number_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_4"
+            android:layout_alignStart="@id/image_view_generated_number_4"
+            android:layout_alignEnd="@id/image_view_generated_number_4"
+            android:layout_alignTop="@id/image_view_generated_number_4"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_generated_number_4"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_generated_number_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_5"
+            android:layout_alignStart="@id/image_view_generated_number_5"
+            android:layout_alignEnd="@id/image_view_generated_number_5"
+            android:layout_alignTop="@id/image_view_generated_number_5"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/sample_01_640_555"
+            android:id="@+id/image_view_generated_number_6"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/image_view_generated_number_5"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/text_view_generated_number_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_view_generated_number_6"
+            android:layout_alignStart="@id/image_view_generated_number_6"
+            android:layout_alignEnd="@id/image_view_generated_number_6"
+            android:layout_alignTop="@id/image_view_generated_number_6"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_check_win"
+
+        android:text="당첨확인 (QR 코드 스캔)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_number_generated"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

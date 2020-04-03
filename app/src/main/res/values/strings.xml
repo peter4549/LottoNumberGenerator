@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">로또 맛집</string>
+    <string name="todo">TODO</string>
+    <string name="lotto_number_url">https://dhlottery.co.kr/common.do?method=getLottoNumber&amp;drwNo=</string>
+    <string name="lotto_round_url">https://dhlottery.co.kr/gameResult.do?method=byWin&amp;wiselog=C_A_1_1</string>
+</resources>
